@@ -37,7 +37,7 @@ cd ~/oslab
 ./setup debian
 ```
 
-Arch系发行版请执行：
+Arch系发行版请执行（在此之前请首先添加archlinuxcn的源并获取gpg key，重要！）：
 
 ```shell
 cd ~/oslab
