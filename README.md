@@ -20,7 +20,7 @@
 
 本脚本已在Ubuntu、Deepin 15、Elementary OS和Manjaro下完成测试。
 
-**注意：**可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（并不是不支持国产！）
+ **注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
 
 ### 环境安装
 
