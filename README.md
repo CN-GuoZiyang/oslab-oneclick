@@ -16,9 +16,11 @@
 
 ### 环境
 
-本脚本适用于Linux的Debian系发行版和Arch系发行版，Debian系发行版包括但不限于Debian、Deepin、Ubuntu及其衍生版本，Arch系发行版包括但不限于Arch Linux、Manjaro及其衍生版本。
+本脚本适用于Linux的Debian系发行版和Arch系发行版，Debian系发行版包括但不限于Debian、Deepin 15、Ubuntu及其衍生版本，Arch系发行版包括但不限于Arch Linux、Manjaro及其衍生版本。
 
-本脚本已在Ubuntu、Deepin、Elementary OS和Manjaro下完成测试。
+本脚本已在Ubuntu、Deepin 15、Elementary OS和Manjaro下完成测试。
+
+**注意：**可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（并不是不支持国产！）
 
 ### 环境安装
 
