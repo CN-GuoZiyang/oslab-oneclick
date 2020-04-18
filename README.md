@@ -6,6 +6,7 @@
 
 ### 我做了什么？
 
+- 增加了对Arch系发行版的支持
 - 更新了Bochs模拟器版本到2.6.10（最新版2.6.11在Linux下有重大BUG）
 - 更新了Bochs的BIOS和VGABIOS到最新版本
 - 修正了Bochs的配置文件（老版本的配置文件无法在新版Bochs上使用）
@@ -15,9 +16,9 @@
 
 ### 环境
 
-本脚本适用于Linux的Debian系发行版，包括但不限于Debian、Deepin、Ubuntu及其衍生版本。
+本脚本适用于Linux的Debian系发行版和Arch系发行版，Debian系发行版包括但不限于Debian、Deepin、Ubuntu及其衍生版本，Arch系发行版包括但不限于Arch Linux、Manjaro及其衍生版本。
 
-本脚本已在Ubuntu、Deepin和Elementary OS下完成测试。
+本脚本已在Ubuntu、Deepin、Elementary OS和Manjaro下完成测试。
 
 ### 环境安装
 
@@ -29,11 +30,18 @@ git clone https://gitee.com/cn-guoziyang/oslab.git ~/oslab
 
 大小大概25M，请耐心等待。
 
-进入目录并执行：
+进入目录并执行安装，Debian系发行版请执行：
 
 ```shell
 cd ~/oslab
-./setup
+./setup debian
+```
+
+Arch系发行版请执行：
+
+```shell
+cd ~/oslab
+./setup archlinux
 ```
 
 注意：请使用普通用户操作，当需要root权限时脚本会自动请求密码。
