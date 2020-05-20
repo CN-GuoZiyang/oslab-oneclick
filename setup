@@ -3,7 +3,7 @@ export OSLAB_PATH=$(cd $(dirname "${BASH_SOURCE[0]}") >/dev/null && pwd)
 
 debianSetup() {
     sudo dpkg --add-architecture i386 
-    sudo apt-get install -y binutils build-essential bin86 manpages-dev libc6-dev-i386 zlib1g:i386 libncurses5:i386 libsm-dev:i386 libx11-dev:i386 libxpm-dev:i386 libexpat1:i386
+    sudo apt-get install -y binutils binutils-common build-essential bin86 manpages-dev libc6-dev-i386 zlib1g:i386 libncurses5:i386 libsm-dev:i386 libx11-dev:i386 libxpm-dev:i386 libexpat1:i386
 	cp $OSLAB_PATH/gcc-3.4-ubuntu.tar.gz /tmp
 	tar zxvf /tmp/gcc-3.4-ubuntu.tar.gz -C /tmp/
 	cd /tmp/gcc-3.4
