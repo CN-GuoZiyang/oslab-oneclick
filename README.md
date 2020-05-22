@@ -2,7 +2,7 @@
 
 声明：本仓库用于配置哈工大操作系统实验所需环境，主要包含Bochs虚拟机和 Linux-0.11的源码
 
-本仓库基于[hoverwinter](https://github.com/hoverwinter)的一键配置脚本制作，制作过程中借鉴了[deathking](https://github.com/DeathKing)的一键配置脚本，修复了脚本在最新的Ubuntu与Debian上的一些问题，感谢两位大大的工作！
+本仓库基于[hoverwinter](https://github.com/hoverwinter)的一键配置脚本制作，制作过程中借鉴了[deathking](https://github.com/DeathKing)的一键配置脚本，修复了脚本在最新的Ubuntu与Debian上的一些问题，并添加了Arch系发行版支持，感谢两位大大的工作！
 
 ### 我做了什么？
 
@@ -18,7 +18,7 @@
 
 本脚本适用于Linux的Debian系发行版和Arch系发行版，Debian系发行版包括但不限于Debian、Deepin 15、Ubuntu及其衍生版本，Arch系发行版包括但不限于Arch Linux、Manjaro及其衍生版本。
 
-本脚本已在Ubuntu、Deepin 15、Elementary OS和Manjaro下完成测试。
+本脚本已在Ubuntu 18.04、Ubuntu 20.04、Deepin v15、Elementary OS和Manjaro下完成测试。
 
  **注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
 
