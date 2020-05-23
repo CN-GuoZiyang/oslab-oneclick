@@ -20,7 +20,9 @@
 
 本脚本已在Ubuntu 18.04、Ubuntu 20.04、Deepin v15、Elementary OS和Manjaro下完成测试。
 
- **注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
+**最新：**完成了在Windows Subsystem for Linux 2（**WSL2**）中的测试！
+
+**注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
 
 ### 环境安装
 
@@ -114,6 +116,31 @@ C语言级调试稍微复杂一些。首先执行如下命令：
 ```
 
 新终端窗口中运行的是GDB调试器。关于gdb调试器请查阅GDB使用手册。
+
+### 在WSL中的使用
+
+测试环境是Windows 10 2004下的WSL2 Ubuntu，之前版本的WSL1应当也适用。
+
+由于WSL没有GUI界面，需要首先安装X11 Server：
+
+```shell
+sudo apt install xorg
+```
+
+接着需要配置X11转发，具体办法自行百度。
+
+Windows宿主机中需要安装X11 Client，我使用的是VcXsrv，它的初始配置有一些坑点：
+- Multiple Window
+- Display number处填0
+- 勾选Disable access controll
+- Additional parameters for VcXsrv处填`-ac`
+- 关闭Windows Defender防火墙
+
+VcXsrv启动后，在WSL中执行`./run`启动Bochs，就会在打开Bochs窗口，测试时效果如下：
+
+[![B9388325092A50BD171127024F894127.md.png](https://images.gitee.com/uploads/images/2020/0523/212531_c82d2413_1910421.png)](https://img.guoziyang.top/image/llG)
+
+左侧的Bochs不是Windows中的Bochs，而是Linux中的Bochs窗口。这样你就可以愉快地在Windows下开发了，强烈推荐用Windows下的vscode连接WSL进行开发，舒服得很。
 
 ### 致谢
 
