@@ -20,7 +20,7 @@
 
 本脚本已在Ubuntu 18.04、Ubuntu 20.04、Deepin v15、Elementary OS和Manjaro下完成测试。
 
-**最新：**完成了在Windows Subsystem for Linux 2（**WSL2**）中的测试！
+**最新：** 完成了在Windows Subsystem for Linux 2（**WSL2**）中的测试！
 
 **注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
 
