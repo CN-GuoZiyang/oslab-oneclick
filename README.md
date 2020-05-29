@@ -138,7 +138,10 @@ sudo apt install xorg
 
 接着需要配置X11转发，在`~/.bashrc`的最后添加环境变量：
 - WSL 1的环境变量设置为`export DISPLAY=localhost:0`
-- WSL 2的环境变量设置为`export DISPLAY=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`:0`
+- WSL 2的环境变量设置为：
+```shell
+export DISPLAY=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`:0
+```
 
 Windows宿主机中需要安装X11 Client，我使用的是VcXsrv，它的初始配置有一些坑点：
 - Multiple Window
