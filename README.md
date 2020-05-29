@@ -136,13 +136,13 @@ C语言级调试稍微复杂一些。首先执行如下命令：
 sudo apt install xorg
 ```
 
-接着需要配置X11转发，具体办法自行百度。
+接着需要配置X11转发，在`~/.bashrc`的最后添加环境变量：
+- WSL 1的环境变量设置为`export DISPLAY=localhost:0`
+- WSL 2的环境变量设置为`export DISPLAY=`cat /etc/resolv.conf | grep nameserver | awk '{print $2}'`:0`
 
 Windows宿主机中需要安装X11 Client，我使用的是VcXsrv，它的初始配置有一些坑点：
 - Multiple Window
-- Display number处填0
 - 勾选Disable access controll
-- Additional parameters for VcXsrv处填`-ac`
 - 关闭Windows Defender防火墙
 
 VcXsrv启动后，在WSL中执行`./run`启动Bochs，就会在打开Bochs窗口，测试时效果如下：
