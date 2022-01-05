@@ -156,6 +156,8 @@ sync
 
 ### 在WSL中的使用
 
+**较新版本的 WSL2 已经直接支持 GUI，无需通过 X11 转发，即以下内容无需执行**
+
 测试环境是Windows 10 2004下的WSL2 Ubuntu，之前版本的WSL1应当也适用。
 
 由于WSL没有GUI界面，需要首先安装X11 Server：
