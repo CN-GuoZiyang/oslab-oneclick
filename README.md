@@ -1,5 +1,17 @@
 # 哈工大操作系统实验环境安装脚本
 
+---
+
+### 广告 Time！
+
+本人正在进行的两个项目：
+1. 基于 C 语言的 RV64 操作系统 Moonix（长期计划）：[Code](https://github.com/CN-GuoZiyang/Moonix), [Doc](https://cn-guoziyang.github.io/Moonix/#/)
+2. 基于 Java 语言的 RV64G 模拟器（WIP）：[Code](https://github.com/CN-GuoZiyang/rvemu)
+
+对以上以及相关项目感兴趣的可以联系我：邮箱 guoziyang0033@gmail.com, qq: 643157350
+
+---
+
 声明：本仓库用于配置哈工大操作系统实验所需环境，主要包含Bochs虚拟机和 Linux-0.11的源码
 
 本仓库基于[hoverwinter](https://github.com/hoverwinter)的一键配置脚本制作，制作过程中借鉴了[deathking](https://github.com/DeathKing)的一键配置脚本，修复了脚本在最新的Ubuntu与Debian上的一些问题，并添加了Arch系发行版支持，感谢两位大大的工作！
@@ -23,7 +35,7 @@
 
 **最新：** 完成了在Windows Subsystem for Linux 2（**WSL2**）中的测试！
 
-**由于虚拟机性能问题，强烈推荐使用 WSL2 Ubuntu 进行实验**
+**注意：** WSL2 的内核不支持 minix 文件系统，导致后面的实验会失败。这里可以参考我的[教程](https://blog.csdn.net/qq_40856284/article/details/106535962)自行编译 WSL 内核
 
 **注意：** 可能由于apt源的原因，本脚本无法在Deepin v20和UOS上使用。（ **并不是不支持国产！** ）
 
@@ -155,8 +167,6 @@ sync
 ```
 
 ### 在WSL中的使用
-
-**较新版本的 WSL2 已经直接支持 GUI，无需通过 X11 转发，即以下内容无需执行**
 
 测试环境是Windows 10 2004下的WSL2 Ubuntu，之前版本的WSL1应当也适用。
 
